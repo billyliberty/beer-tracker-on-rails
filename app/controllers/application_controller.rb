@@ -5,5 +5,11 @@ class ApplicationController < ActionController::Base
             user = User.find_by(:id => sessionp[:user_id])
         end
     end
-    
+
+    def require_login
+        unless current_user
+            redirect_to root_path
+        end
+    end
+
 end

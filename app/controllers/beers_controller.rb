@@ -24,6 +24,9 @@ class BeersController < ApplicationController
     end
 
     def update
+        @beer = Beer.find_by(id: params[:id])
+        @beer.update(beer_params)
+        redirect_to @beer
     end
 
     private

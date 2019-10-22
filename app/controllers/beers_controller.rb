@@ -7,6 +7,7 @@ class BeersController < ApplicationController
     end
 
     def index
+        @beers = Beer.all
     end
 
     def show

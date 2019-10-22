@@ -15,6 +15,12 @@ class BeersController < ApplicationController
     end
 
     def create
+        @beer = Beer.find_or_create_by(beer_params)
+        if @beer
+            redirect_to beer_path(@beer)
+        else
+            render :new
+        end
     end
 
     def update

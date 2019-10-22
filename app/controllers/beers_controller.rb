@@ -20,4 +20,10 @@ class BeersController < ApplicationController
     def update
     end
 
+    private
+
+    def beer_params
+        params.require(:beer).permit(:name, :style, :brewery, :abv)
+    end
+
 end

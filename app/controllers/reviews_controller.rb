@@ -19,7 +19,13 @@ class ReviewsController < ApplicationController
 
     def show
     end
-    
+
+    private
+
+    def review_params
+        params.require(:review).permit(:rating, :review, :price, :store, :date_of_purchase)
+    end
+
 
 
 

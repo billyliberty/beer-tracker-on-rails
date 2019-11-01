@@ -24,6 +24,9 @@ class ReviewsController < ApplicationController
     end
 
     def edit
+        @beer = Beer.find_by(id: params[:beer_id])
+        if review.user_id != current_user.id
+            redirect_to beers_path
     end
 
     def update

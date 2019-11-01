@@ -30,6 +30,8 @@ class ReviewsController < ApplicationController
     end
 
     def update
+        @review.update(review_params)
+        redirect_to beer_review_path(@review.beer, @review)
     end
 
     def show

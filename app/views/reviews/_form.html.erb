@@ -1,0 +1,15 @@
+<%= form_for @review do |f| %>
+    <%#= beer_id_field(@review) %>
+
+        <%= f.label :rating %>
+        <%= f.number_field :rating %>
+        <br>
+        <%= f.label :review %>
+        <%= f.text_area :review %>
+        <br>
+        <%= f.label :price %>
+        <%= f.number_field :price %>
+        <br>
+        <%= f.submit %>
+
+<% end %>

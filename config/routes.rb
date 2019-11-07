@@ -11,14 +11,14 @@ Rails.application.routes.draw do
   root "static#home"
 
   # Login
-  get '/signin', to: 'sessions#new'
-  post '/signin', to: 'sessions#create'
+  get 'signin', to: 'sessions#new'
+  post 'signin', to: 'sessions#create'
 
   # Logout
-  delete '/logout', to: 'sessions#destroy'
+  delete 'logout', to: 'sessions#destroy'
 
   # Signup
-  get '/signup', to: 'users#new'
-  post '/signup', to: 'users#create'
+  get 'signup', to: 'users#new'
+  post 'signup', to: 'users#create'
 
 end

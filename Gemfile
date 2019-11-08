@@ -17,7 +17,6 @@ gem 'uglifier', '>= 1.3.0'
 # gem 'mini_racer', platforms: :ruby
 
 gem 'omniauth'
-gem 'omniauth-facebook'
 gem 'dotenv-rails'
 
 

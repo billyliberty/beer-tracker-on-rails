@@ -1,9 +1,7 @@
 <h1>Welcome <%= current_user.name %>! </h1>
 
 <h2>Your beer list!</h2>
-    <% @current_user.reviews.each do |review| %>
-        <h4><%= link_to beer_name(r.beer), beer_rating_path(r.beer, r.id) %></h4>
-    <% end %>
+    
 <br>
 <br>
 <p><%= link_to 'Add a new beer', new_beer_path %></p>

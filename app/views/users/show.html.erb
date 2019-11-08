@@ -1,4 +1,4 @@
-<h1>Welcome <% @current_user.name %>! </h1>
+<h1>Welcome <%= @current_user.name %>! </h1>
 
 <h2>Your beer list!</h1>
     <% @current_user.review.each do |r| %>

@@ -17,8 +17,7 @@ class ReviewsController < ApplicationController
     def create
         @review = Review.new(review_params)
         if @review.save
-            redirect_to beer_review_path(@review.beer, @review), flash[:message] = "Review saved!"
-        else
+            redirect_to beer_review_path(@review.beer, @review)
             render :new
         end
     end

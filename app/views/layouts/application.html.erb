@@ -21,13 +21,14 @@
           <div class='sidebar'>
 
           <% if logged_in?%>
-            <%= link_to 'Home', user_path(current_user)%> |
-            <%= link_to 'Logout', logout_path, method:"delete" %>
+            <%= link_to 'Home', user_path(current_user) %> |
+            <%= link_to 'Logout', logout_path, method: "delete" %>
 
           <% else %>
 
             <%= link_to 'Sign Up', signup_path %> |
-            <%= link_to 'Log In', signin_path %>
+            <%= link_to 'Log In', signin_path %> |
+            <a href='/auth/facebook'>Login with Facebook</a>
 
         <% end %>
         </div>

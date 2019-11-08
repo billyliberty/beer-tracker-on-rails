@@ -18,6 +18,7 @@ gem 'uglifier', '>= 1.3.0'
 
 gem 'omniauth'
 gem 'omniauth-facebook'
+gem 'dotenv-rails'
 
 
 # Use CoffeeScript for .coffee assets and views
